@@ -1,0 +1,282 @@
+/* Deanna Sithideth | August 2023 */
+/* color palette:
+pink: #ff5395
+purple: #a754ff
+orange: #ff8b1a
+green: #c9ff29
+blue: #25abff
+*/
+
+html {
+	text-align: center;
+}
+
+/* testing fonts for header */
+@font-face {
+	font-family: Aquaa;
+	src: url(Aqua.otf);
+}@font-face {
+	font-family: Christmas;
+	src: url(ChristmasShineFONT.otf);
+}@font-face {
+	font-family: Gallagher;
+	src: url(Gallagher.otf);
+}@font-face {
+	font-family: Star;
+	src: url(HuntingStar.otf);
+}@font-face {
+	font-family: Ontel;
+	src: url(Ontel.otf);
+}@font-face {
+	font-family: Shine;
+	src: url(SparkleShine.otf);
+}
+p.a {
+	font-family: Aquaa;
+}
+p.b {
+	font-family: Christmas;
+}
+p.c {
+	font-family: Gallagher;
+}
+p.d {
+	font-family: Star;
+}
+p.e {
+	font-family: Ontel;
+}
+p.f {
+	font-family: Shine;
+}
+
+header {
+	margin-top: 5%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* nav bar */
+nav {
+	font-family: "Garamond", serif;
+	font-size: calc(16pt + 5%);
+	margin: 0;
+}
+nav ul {
+	padding-left: 0;
+}
+/* nav links are displayed horizontally */
+nav li {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+/* nav link text style default */
+nav a {
+	border: 2px solid white;
+	border-radius: 8px;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	padding: 8px 23px;
+	transition: 0.3s;
+} 
+nav a:visited {
+	color: #ff5395;
+}
+
+nav a:hover, #current {
+	background-color: transparent;
+	color: black;
+	border-color: #ff5395;
+}
+
+section {
+	margin-top: 3%;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: white;
+
+	border: 2px solid #c9ff29;
+	border-radius: 10px;
+}
+
+#TOC {
+	border: none;
+}
+
+body {
+	font-family: "Times New Roman", serif;
+	margin-left: 0;
+	margin-right: 0;
+
+	background-image: url("../images/background_squiggle.png");
+	background-repeat: repeat-y;
+	background-position: 5% 0%;
+
+	/* code below for body by 
+	https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 */
+	min-height: 100vh;
+	display:  flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-family: "Gallagher", serif;
+	font-size: calc(45pt + 50%);
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+
+	/* text shadow from https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+		horizontal shift, vertical shift, blur radius, color */
+	text-shadow: 2px 3px 3px black;
+} 
+
+/* image and text centering/alignment from https://www.w3schools.com/css/css_align.asp */
+h2 {
+	color: black;
+	font-family: "Garamond", serif;
+	text-align: center;
+} 
+
+h3 {
+	color: hotpink;
+	font-family: "Garamond", serif;
+	text-align: center;
+}
+
+hr {
+	border-color: whitesmoke;
+	border-width: 1px;
+	width: 90%;
+	margin: 30px 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure {
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+figcaption {
+	color: black;
+	background-color: #c9ff29;
+	font-family: "Helvetica", sans-serif;
+	/* font-size in em from https://www.w3schools.com/css/css_font_size.asp */
+	font-size: 0.9375em;
+	font-style: italic;
+	text-align: center;
+	width: 100%;	
+	display: inline-block;
+}
+
+p {
+	text-align: justify;
+	color: black;
+	font-size: 15pt;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+
+}
+
+#hello {
+	text-align: center;
+	font-size: 24pt;
+}
+
+article {
+}
+
+.caption {
+	color: gray;
+	font-family: "Times New Roman", serif;
+	/* font-size in em from https://www.w3schools.com/css/css_font_size.asp */
+	/* font-size: 0.9375em; */
+	font-style: italic;
+}
+
+footer {
+	/* code below for body by 
+	https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 */
+	margin-top: auto;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	font-size: 14pt;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+	color: #ff5395;
+}
+
+a:visited {
+	color: purple;
+}
+
+/* table color and border properties from  
+	https://www.w3schools.com/html/html_table_borders.asp */
+table, th, td {
+	margin-left: auto;
+	margin-right: auto;
+	border:  2px #ff5395;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+}
+
+/* back to top button 
+styling from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+#btt {
+	position: fixed;
+	bottom: 5px;
+	right:  5px;
+	z-index: 99;
+	background-color: white;
+	color: #a754ff;
+	padding: 8px 23px;
+	text-decoration: none;
+	font-size: 1.3em;
+	border: 2px solid #a754ff;
+	/* smooth transition */
+	transition: 0.3s;
+}
+#btt:hover {
+	background-color: #a754ff;
+	color: white;
+	text-decoration: none;
+	border: none;
+}
+
+input[type=text] {
+	border: 1px #ff5395;
+}
+/*
+input[type=text]:focus {
+	border: 2px solid pink;
+}*/
+
